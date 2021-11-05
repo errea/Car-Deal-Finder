@@ -1,70 +1,286 @@
-# Getting Started with Create React App
+[](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Book Car Appointment- React-Rails Capstone project 
 
-## Available Scripts
+> This final capstone project uses Rails as an API server and uses React as the frontend using the API endponits to display RESTful routes displaying car models witch the user can reserve for it's own use, only admins can register and delete the cars. User can login and register.
 
-In the project directory, you can run:
+This app is designed follwing a real world senerio with given designs, and we had to personalize the content.[Find project specifications here](https://github.com/microverseinc/curriculum-final-capstone/blob/main/projects/business_requirements.md)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div align="center">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[![View Code](https://img.shields.io/badge/View%20-Code-green)](https://github.com/mrigorir/group-final-capstone-react)
+[![Github Issues](https://img.shields.io/badge/Github%20-Issues-red)](https://github.com/mrigorir/group-final-capstone-react/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/errea/Hello-world-rails-react/pull/1)
+[![Backend API Repo](https://img.shields.io/badge/Backend-API%20Repo-purple)](https://github.com/ccobasi/group-final-capstone)
+[![API DOCS](https://img.shields.io/badge/API-Documentation%50-yellow)]()
 
-### `yarn test`
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+<a href="#with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#gs">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Authors</a>
+</p>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+># Project requirements
+  ## Basics
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Proper authenticated login.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. In the navigation panel, the user can see links to:
 
-### `yarn eject`
+* Car items that you selected as a theme.
+* "Reserve" form.
+* "My reservations".
+* "Add Car that you selected as a theme"
+* "Delete  Car that you selected as a theme" 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. On the main page, the user can see a list of Car
+When the user selects a specific item, they can see the details page with its full description
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. In the details page, the user can click the "Reserve" button .
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+When the user clicks the "Add item" link in the navigation panel they can see a form for adding a new item.
 
-## Learn More
+5. When the user clicks the "Delete item" link in the navigation panel they can see a list of all items with title and "Delete" button.
+   
+6. When the user clicks the "Delete" button, the selected item is marked as removed and does not show on the main list anymore.
+   
+7. To reserve an appointment, the user has to select a date and city (username and selected item are autofilled).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+8. When the user clicks the "My reservations" link in the navigation panel they can see a list of their reservations (with information about item name, date and city)
 
-### Code Splitting
+9. Add full documentation for your API.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+10. Implement proper user authentication from the front-end to the server.
+Make sure that the "Add item" and "Delete item" links are accessible only by users who are admins.
 
-### Analyzing the Bundle Size
+># Technical set up
+1. Set up the repository/repositories on GitHub and use Gitflow.
+   
+2. You should use Postgres as your database
+   
+3. Use Rails to create backend API.
+   
+4. Use React & Redux to create frontend UI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📝 Contents
+ 
+## 🔧 Built with<a name = "with"></a>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React/Redux
+- Hooks
+- React Routes
+- React-dom
+- HTML, CSS, JavaScript (ES6)
+- Ruby
+- Rails
+- jwt gem. 
+- rack-cors 
+- gem 'react-rails'
+- gem 'webpacker', '~> 5.0'
+- gem 'spring'
+- PostgreSQL
+- react 17.0.2
+- react_ujs 2.6.1
+- react-redux 7.2.5
+- react-router-dom 5.3.0
+- redux 4.1.1
+- redux-logger
+- redux-thunk
+- Linters: Rubocop, ESLint
+- NPM
+- Functional based Components with React Hooks 
+- Virtual DOM
+- [Webpack config](hhttps://webpack.js.org/guides/getting-started/)
+- ES6 Modules 
+- [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md)
+- Use [React Router](https://reactrouter.com/).
+- Use styles in a React app. [CSS modules](https://github.com/css-modules/css-modules).
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Getting Started <a name = "gs"></a>
+> To get a local copy up and running follow these simple example steps.
 
-### Deployment
+<details>
+  <summary>Get instructions</summary>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+To get a local copy up and running follow these simple example steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- On the project, GitHub page, navigate to the [main page of the repository](https://github.com/ccobasi/group-final-capstone)
+
+- Click on a button named `code`
+
+- Copy the project URL as displayed on HTTPS tab
+
+- If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal
+
+- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
+
+- Type `git clone`, and then paste the URL you copied in Step 3.<br>
+
+  `$ git clone https://github.com/ccobasi/group-final-capstone.git` <em>Press Enter key</em><br>
+
+- Your local copy will be created.
+
+- Please note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
+
+- After you get the project aiming to the desired directory, you need now to install dependencies by running npm install.
+
+
+  ### Database Setup
+
+- In your terminal, while in the root dir of your Rails project, type <code>bin/rails db:setup</code> to create your local databases, load the schema, and initialize with the seed data.
+
+## Usage
+
+1. In your terminal, run <code>bin/rails server</code> while inside the root directory of the repository files
+2. Go to your browser of choice and enter this URL: [http://localhost:3000](http://localhost:3000)
+3. \[Optional\] if you want to make changes to the JavaScript file and see changes immediately, run `./bin/webpack-dev-server`
+4. Refresh the page to see a different greeting message! 😸
+
+**Note:<br>_ These commands will not stop on their own. If you change something in your project files, it will recompile and reload the page in your browser. To exit, hit "ctrl + c"_**
+
+
+## Live Preview
+
+- [Rails](https://morning-chamber-68237.herokuapp.com/) API features.
+
+
+## :star: [Live Demo](https://morning-chamber-68237.herokuapp.com/) :star:
+
+## React Fronted App 
+[App](https://github.com/mrigorir/group-final-capstone-react)
+
+## API Documentation
+[API DOC LINK](https://capstoneapi.postman.co/workspace/3611123d-64d3-44a4-83f2-183e97770672)
+
+## Linters
+To run the linters included in this repository, go to the root directory of your repository and copy/paste the following commands into your terminal:
+(**Note:** Make sure you run `npm install` before you do this)
+- for ESlint, `npx eslint <path of file>`
+- for Rubocop, `rubocop .`
+
+```
+$ cd <folder>
+```
+
+~~~bash
+$ git clone https://github.com/errea/Hello-world-rails-react.git
+$ cd Hello-world-rails-react
+~~~
+
+Run `bundle Install` to install the node modules and webpacker.
+
+Run `yarn build` to build the bundler.
+
+Run `yarn start`  opens on `http://localhost:8080/` in your browser.
+
+## Set up
+* Open your terminal and locate the folder you want to clone the repository and follow the steps above to install
+
+</details>
+
+### Github Actions
+
+To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
+
+1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
+   
+2. Create the `feature/branch` and push.
+   
+3. Start working on your milestone as usual.
+   
+4. Open a PR from the `feature/branch` when your work is done.
+
+
+## Project Structure
+
+    Group-Final-Capstone-react Project
+    └── node_modules
+    └── .github\workflows
+        └── linters.yml
+    /src
+    |---/components
+    |---/redux
+        |--- /Cars
+                | cars.js
+        | cofigureStore.js
+    | index.js
+    └── .eslintrc.json
+    └── .gitignore
+    └── .hintrc
+    └──.stylelintrc.json
+    └── MIT.md
+    └── package-lock.json
+    └── package.json
+    └──README.md
+
+
+### Kanban Board links
+- [Previous State](https://github.com/ccobasi/group-final-capstone/issues/45)
+- [Current State](https://github.com/ccobasi/group-final-capstone/projects/1)
+
+### Install Dependencies
+1. If you are not in your system terminal/command prompt already, please open it and go to the directory where you cloned the remote repository or extracted the project files.
+2. While in the project root directory, type `bundle install`. This command will install all the necessary gems in your system.
+3. Then you can type <code>yarn install --check-files</code>.
+## ✒️  Authors <a name = "author"></a>
+
+
+👤 **Marco Parra**
+
+- GitHub: [@mrigorir](https://github.com/mrigorir)
+- Twitter: [@marcoparra311](https://twitter.com/marcoparra311)
+- LinkedIn: [@marco-alonso-parra](https://www.linkedin.com/in/marco-alonso-parra/)
+
+👤 **Eri**
+
+- Github: [@errea](https://github.com/errea)
+- Twitter: [@Erreakay](https://github.com/errea)
+- Linkedin: [Eri Okereafor](https://www.linkedin.com/in/eri-ngozi-okereafor/)
+
+👤 **Chuckwuma Obasi**
+- Github: [@ccobasi](https://github.com/ccobasi/)
+- Twitter: [@MagzCelyn](https://twitter.com/obasichux)
+- Linkedin: [linkedin](https://www.linkedin.com/in/chukwuma-obasi/)
+
+👨‍💻 **Jocyline Magero**
+
+- Github: [@jmagero](https://github.com/Jmagero)
+- Twitter: [@MagzCelyn](https://twitter.com/magero_jocyline)
+- Linkedin: [linkedin](https://www.linkedin.com/in/jocyline-magero)
+
+👩‍💻 **Ijay Abby**
+
+- GitHub: [@IjayAbby](https://github.com/IjayAbby)
+- Twitter: [@Ijay_js](https://twitter.com/Ijay_js)
+- LinkedIn: [Abigael Nyangasi](https://www.linkedin.com/in/ijayabby4/)
+  
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mrigorir/group-final-capstone-react/issues)
+## 👍 Show your support
+
+- Microverse: [@microverse](https://www.microverse.org/)
+  
+
+## Acknowledgments
+
+- Microverse
+  
+- Coding Partners 
+  
+- Murat Korkmaz: [on behance](https://www.behance.net/muratk)
+
+## 📝 License
+
+This project is [MIT](https://github.com/ccobasi/group-final-capstone/blob/main/LICENSE) licensed.
